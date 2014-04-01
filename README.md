@@ -1,2 +1,2 @@
-gulp-license-find
-=================
+gulp-license-finder
+===================

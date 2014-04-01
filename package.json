@@ -1,5 +1,5 @@
 {
-  "name": "gulp-license-find",
+  "name": "gulp-license-finder",
   "version": "0.0.0",
   "description": "Find licenses of project and dependencies",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/iandotkelly/gulp-license-find"
+    "url": "git://github.com/iandotkelly/gulp-license-finder"
   },
   "keywords": [
     "gulp",
@@ -18,7 +18,7 @@
   "author": "Ian Kelly",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iandotkelly/gulp-license-find/issues"
+    "url": "https://github.com/iandotkelly/gulp-license-finder/issues"
   },
-  "homepage": "https://github.com/iandotkelly/gulp-license-find"
+  "homepage": "https://github.com/iandotkelly/gulp-license-finder"
 }
