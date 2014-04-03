@@ -1,6 +1,6 @@
 {
   "name": "gulp-license-finder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Find licenses of project and dependencies",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/iandotkelly/gulp-license-finder/issues"
   },
-  "homepage": "https://github.com/iandotkelly/gulp-license-finder"
+  "homepage": "https://github.com/iandotkelly/gulp-license-finder",
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-jshint": "~1.5.2",
+    "mocha": "~1.18.2",
+    "should": "~3.2.0"
+  },
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+    "nlf": "~0.2.9"
+  }
 }
