@@ -1,11 +1,8 @@
 ![status](https://secure.travis-ci.org/iandotkelly/gulp-license-finder.png?branch=master)
 
-## Information
+## gulp-license-finder
 
 <table>
-<tr>
-<td>Package</td><td>gulp-license-finder</td>
-</tr>
 <tr>
 <td>Description</td>
 <td>Finds licenses in node project and dependencies</td>
@@ -21,13 +18,13 @@
 ```javascript
 var licenseFind = require('gulp-license-finder');
 
-gulp.task('find', function() {
-	licenseFind()
+gulp.task('licenses', function() {
+	return licenseFind()
 		.pipe(gulp.dest('./audit'))
 });
 ```
 
-This will use the nlf modult to attempt to identify licenses in your node project and its dependencies, and will provide a file stream
+This will use the nlf module to attempt to identify licenses in your node project and its dependencies, and will provide a file stream
 that can be piped to a destination folder.
 
 
