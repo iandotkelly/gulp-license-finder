@@ -18,14 +18,18 @@ var PLUGIN_NAME = 'gulp-license-finder';
 
 function licenseFinder(filename, options) {
 
+	// if the filename is an object, then
+	// we will assume this is just an options
+	// object
 	if (typeof filename === 'object') {
 		options = filename;
-		filename = null;
+		filename = options.filename;
 	}
 
+	// set default options
 	filename = filename || 'licenses.txt';
-
 	options = options || {};
+	options.directory = options.directory || process.cwd();
 	options.production = options.production || false;
 	options.csv = options.csv || false;
 
