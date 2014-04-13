@@ -22,8 +22,80 @@ gulp.task('licenses', function() {
 });
 ```
 
-This will use the nlf module to attempt to identify licenses in your node project and its dependencies, and will provide a file stream
-that can be piped to a destination folder.
+This will attempt to identify licenses in your node project and its dependencies, and will provide a file stream
+that can be piped to an 'audit' destination folder.  The file will have a default 'licenses.txt' filename.
+
+To change the output filename, add the name as an argument to licenseFind, for example:
+
+```javascript
+var licenseFind = require('gulp-license-finder');
+
+gulp.task('licenses', function() {
+	return licenseFind('outputfile.txt')
+		.pipe(gulp.dest('./audit'))
+});
+```
+
+### Options
+
+#### options.directory
+Type: `String`
+Default value: `current project directory`
+
+A string value for the path of the node project to scan
+
+#### options.production
+Type: `Boolean`
+Default value: false
+
+A boolean value. If true, only production dependencies are included in the scan
+
+#### options.csv
+Type: `Boolean`
+Default value: `./licenses.txt`
+
+A boolean value.  If true the output is in a comma-separated-variable format for import into a spreadsheet.
+
+#### Usage examples:
+
+```javascript
+var licenseFind = require('gulp-license-finder');
+
+gulp.task('licenses', function() {
+	return licenseFind('outputfile.txt', {
+			directory: '/home/me/someproject',
+			production: true,
+			csv: true
+		}).pipe(gulp.dest('./audit'))
+});
+```
+
+### Example output
+
+<pre>
+commander@0.6.1 [license(s): MIT]
+└── readme files: MIT
+
+read-installed@0.2.2 [license(s): BSD]
+└── license files: BSD
+
+glob@3.2.3 [license(s): BSD]
+├── package.json:  BSD
+└── license files: BSD
+
+archy@0.0.2 [license(s): MIT/X11]
+└── package.json:  MIT/X11
+
+json-stringify-safe@5.0.0 [license(s): BSD]
+├── package.json:  BSD
+└── license files: BSD
+
+should@1.2.2 [license(s): MIT]
+└── readme files: MIT
+</pre>
+
+For output in CSV format use the csv: true option.
+
 
 
 ## LICENSE
