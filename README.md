@@ -1,4 +1,4 @@
-## gulp-license-finder [![Build Status](https://secure.travis-ci.org/iandotkelly/gulp-license-finder.png)](http://travis-ci.org/iandotkelly/grunt-license-finder) [![Dependency Status](https://gemnasium.com/iandotkelly/gulp-license-finder.svg)](https://gemnasium.com/iandotkelly/gulp-license-finder)
+## gulp-license-finder [![Build Status](https://secure.travis-ci.org/iandotkelly/gulp-license-finder.png)](http://travis-ci.org/iandotkelly/gulp-license-finder) [![Dependency Status](https://gemnasium.com/iandotkelly/gulp-license-finder.svg)](https://gemnasium.com/iandotkelly/gulp-license-finder)
 
 <table>
 <tr>
