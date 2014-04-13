@@ -13,6 +13,9 @@ var path = require('path');
 var PluginError = gutil.PluginError;
 var Stream = require('stream');
 
+// Consts
+var PLUGIN_NAME = 'gulp-license-finder';
+
 function licenseFinder(filename, options) {
 
 	if (typeof filename === 'object') {
@@ -28,18 +31,16 @@ function licenseFinder(filename, options) {
 
 	var stream = new Stream();
 
-	var buffer = new Buffer(0);
-
 	nlf.find(options, function (err, data) {
-
 		if (err) {
-			// do something gulpy
+			throw new gutil.PluginError(PLUGIN_NAME, err, {showStack: true});
 		}
 
 		var formatter = options.csv ? nlf.csvFormatter : nlf.standardFormatter;
+
 		formatter.render(data, function (err, output) {
 			if (err) {
-				// do something gulpy
+				throw new gutil.PluginError(PLUGIN_NAME, err, {showStack: true});
 			}
 
 			var file = new File({
