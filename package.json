@@ -10,9 +10,22 @@
     "type": "git",
     "url": "git://github.com/iandotkelly/gulp-license-finder"
   },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
   "keywords": [
     "gulp",
+    "gulpplugin",
     "license",
+     "license",
+    "finder",
+    "sniffer",
+    "nlf",
+    "audit",
+    "licence",
+    "checker",
+    "legal",
+    "dependency",
     "nlf"
   ],
   "author": "Ian Kelly",
