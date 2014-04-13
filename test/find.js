@@ -1,5 +1,10 @@
+/*jshint expr:true */
+
 /**
  * Tests for gulp-license-finder
+ *
+ * Copyright (c) Ian Kelly
+ * Licenced under The MIT License
  */
 
 var licenseFinder = require('../');
@@ -66,7 +71,5 @@ describe('gulp-license-finder', function() {
 			stream.should.be.an.object;
 			stream.should.be.an.instanceOf(Stream);
 		});
-
 	});
-
 });
