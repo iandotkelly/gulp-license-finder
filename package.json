@@ -1,6 +1,6 @@
 {
   "name": "gulp-license-finder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Find licenses of project and dependencies",
   "main": "index.js",
   "scripts": {
