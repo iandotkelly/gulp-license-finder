@@ -4,20 +4,17 @@
   "description": "Find licenses of project and dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/iandotkelly/gulp-license-finder"
   },
-  "scripts": {
-    "test": "mocha --reporter spec"
-  },
   "keywords": [
     "gulp",
     "gulpplugin",
     "license",
-     "license",
+    "license",
     "finder",
     "sniffer",
     "nlf",
@@ -35,13 +32,16 @@
   },
   "homepage": "https://github.com/iandotkelly/gulp-license-finder",
   "devDependencies": {
-    "gulp": "~3.6.0",
-    "gulp-jshint": "~1.5.2",
-    "mocha": "~1.18.2",
-    "should": "~3.2.0"
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.6.1",
+    "mocha": "^1.19.0",
+    "should": "^3.3.2"
   },
   "dependencies": {
-    "gulp-util": "~2.2.14",
-    "nlf": "~0.2.9"
+    "gulp-util": "^2.2.14",
+    "nlf": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10"
   }
 }
