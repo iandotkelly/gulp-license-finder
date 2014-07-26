@@ -32,14 +32,15 @@
   },
   "homepage": "https://github.com/iandotkelly/gulp-license-finder",
   "devDependencies": {
-    "gulp": "^3.6.2",
-    "gulp-jshint": "^1.6.1",
-    "mocha": "^1.19.0",
-    "should": "^3.3.2"
+    "gulp": "^3.8.6",
+    "gulp-jshint": "^1.8.0",
+    "gulp-util": "^2.2.20",
+    "mocha": "^1.21.0",
+    "should": "^4.0.4"
   },
   "dependencies": {
     "gulp-util": "^2.2.14",
-    "nlf": "^1.0.0"
+    "nlf": "^1.0.1"
   },
   "engines": {
     "node": ">=0.10"
