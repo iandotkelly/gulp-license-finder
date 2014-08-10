@@ -1,3 +1,9 @@
+
+0.1.2
+==============
+
+* Update version of nlf to 1.0.2 which supports read-installed@3 / semver@3
+
 0.1.1
 ==============
 
