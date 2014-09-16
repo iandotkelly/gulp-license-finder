@@ -50,6 +50,12 @@ Default value: false
 
 A boolean value. If true, only production dependencies are included in the scan
 
+#### options.depth
+Type: `Number`
+Default value: if undefined this defaults to infinite
+
+The maximum depth of node_modules to traverse, 0 means the immediate dependencies, add 1 per module depth
+
 #### options.csv
 Type: `Boolean`
 Default value: `./licenses.txt`
@@ -65,6 +71,7 @@ gulp.task('licenses', function() {
 	return licenseFind('outputfile.txt', {
 			directory: '/home/me/someproject',
 			production: true,
+			depth: 5,
 			csv: true
 		}).pipe(gulp.dest('./audit'))
 });

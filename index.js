@@ -32,6 +32,7 @@ function licenseFinder(filename, options) {
 	options.directory = options.directory || process.cwd();
 	options.production = options.production || false;
 	options.csv = options.csv || false;
+	options.depth = options.depth; // undefined is the default
 
 	var stream = new Stream();
 
