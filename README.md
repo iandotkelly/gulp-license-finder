@@ -103,7 +103,13 @@ should@1.2.2 [license(s): MIT]
 
 For output in CSV format use the csv: true option.
 
+### Unit tests
 
+To run the module unit tests you should have mocha installed (version ^1.21.4) and then run
+
+```sh
+npm test
+```
 
 ## LICENSE
 
