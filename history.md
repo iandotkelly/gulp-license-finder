@@ -1,4 +1,10 @@
 
+0.2.0
+==============
+
+* Update version of nlf to 1.1.0 which includes a depth option
+* Expose the depth option
+
 0.1.2
 ==============
 
