@@ -105,7 +105,12 @@ For output in CSV format use the csv: true option.
 
 ### Unit tests
 
-To run the module unit tests you should have mocha installed (version ^1.21.4) and then run
+The majority of the tests for the functionality of this license finder are in the
+[nlf](https://www.npmjs.org/package/nlf) module.  This plugin merely provides a gulp
+wrapper.
+
+To run the gulp pluging unit tests (such as they are) you should have mocha installed
+(version ^1.21.4) and then run
 
 ```sh
 npm test
