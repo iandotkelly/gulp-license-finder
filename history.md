@@ -1,4 +1,9 @@
 
+0.3.0
+==============
+
+* Update version of nlf to 1.2.0 which significantly improves performance and sorts results alphabetically
+
 0.2.0
 ==============
 
