@@ -1,6 +1,6 @@
 {
   "name": "gulp-license-finder",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Find licenses of project and dependencies",
   "main": "index.js",
   "scripts": {
@@ -36,10 +36,10 @@
     "gulp-jshint": "^1.9.4",
     "gulp-util": "^3.0.4",
     "mocha": "^2.2.1",
-    "should": "^5.2.0"
+    "should": "^6.0.1"
   },
   "dependencies": {
-    "nlf": "^1.2.0"
+    "nlf": "^1.3.1"
   },
   "engines": {
     "node": ">=0.10"
