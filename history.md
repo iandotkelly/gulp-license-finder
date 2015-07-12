@@ -1,3 +1,8 @@
+0.3.2 (July 12, 2015)
+====================
+
+* Update to nlf@1.3.2 which copes with license/licenses properties in package.json incorrectly formatted as an object
+* Bump dependencies
 
 0.3.1 (May 10, 2015)
 ====================
