@@ -33,6 +33,7 @@ function licenseFinder(filename, options) {
 	options.production = options.production || false;
 	options.csv = options.csv || false;
 	options.depth = options.depth; // undefined is the default
+	options.summaryMode = options.summaryMode || 'simple';
 
 	var stream = new Stream();
 
@@ -43,7 +44,7 @@ function licenseFinder(filename, options) {
 
 		var formatter = options.csv ? nlf.csvFormatter : nlf.standardFormatter;
 
-		formatter.render(data, function (err, output) {
+		formatter.render(data, options,function (err, output) {
 			if (err) {
 				throw new gutil.PluginError(PLUGIN_NAME, err, {showStack: true});
 			}

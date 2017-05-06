@@ -62,6 +62,14 @@ Default value: `./licenses.txt`
 
 A boolean value.  If true the output is in a comma-separated-variable format for import into a spreadsheet.
 
+
+#### options.summaryMode
+
+Type: `String`
+Default value: `simple`
+
+Whether to print out the 'simple' or 'detail' summary at the end of the report.
+
 #### Usage examples:
 
 ```javascript
@@ -120,7 +128,7 @@ npm test
 
 (The MIT License)
 
-Copyright (c) 2014 Ian Kelly
+Copyright (c) 2014-2017 Ian Kelly
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
